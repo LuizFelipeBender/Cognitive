@@ -1,4 +1,4 @@
-from aws_services import get_textract_client
+from src.aws_services import get_textract_client
 
 def extract_document_text(image_bytes):
     """Extrai texto estruturado de um documento usando AWS Textract"""

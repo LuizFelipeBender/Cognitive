@@ -4,7 +4,15 @@ from pathlib import Path
 import cv2
 import streamlit as st
 from dotenv import load_dotenv
+# Ajuste dos caminhos do projeto
+project_root = os.path.abspath(os.path.join(os.getcwd(), '..'))
+src_path = os.path.join(project_root, 'src')
+if src_path not in sys.path:
+    sys.path.insert(0, src_path)
 
+dotenv_path = os.path.join(src_path, '.env')
+print(f"Carregando .env de: {dotenv_path}")
+load_dotenv(dotenv_path)
 # Adiciona o diretório raiz do projeto ao PATH
 project_root = Path(__file__).parent.parent.parent  # Ajuste conforme sua estrutura
 sys.path.append(str(project_root))
