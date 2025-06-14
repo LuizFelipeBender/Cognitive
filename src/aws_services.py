@@ -5,12 +5,8 @@ from dotenv import load_dotenv
 # Caminho relativo ao arquivo atual (aws_services.py)
 current_dir = os.path.dirname(os.path.abspath(__file__))
 dotenv_path = os.path.join(current_dir, '.env')
-print(f"Carregando .env de: {dotenv_path}")
 
 load_dotenv(dotenv_path)
-
-print("Access Key:", os.getenv("AWS_ACCESS_KEY_ID"))
-print("Secret Key:", os.getenv("AWS_SECRET_ACCESS_KEY"))
 
 def get_rekognition_client():
     return boto3.client(

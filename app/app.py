@@ -11,7 +11,6 @@ if src_path not in sys.path:
     sys.path.insert(0, src_path)
 
 dotenv_path = os.path.join(src_path, '.env')
-print(f"Carregando .env de: {dotenv_path}")
 load_dotenv(dotenv_path)
 # Adiciona o diretório raiz do projeto ao PATH
 project_root = Path(__file__).parent.parent.parent  # Ajuste conforme sua estrutura
