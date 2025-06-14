@@ -3,7 +3,6 @@ opencv-python
 Pillow
 boto3
 numpy
-os
 sys
 cv2
 matplotlib
