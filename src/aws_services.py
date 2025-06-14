@@ -9,8 +9,8 @@ print(f"Carregando .env de: {dotenv_path}")
 
 load_dotenv(dotenv_path)
 
-# print("Access Key:", os.getenv("AWS_ACCESS_KEY_ID"))
-# print("Secret Key:", os.getenv("AWS_SECRET_ACCESS_KEY"))
+print("Access Key:", os.getenv("AWS_ACCESS_KEY_ID"))
+print("Secret Key:", os.getenv("AWS_SECRET_ACCESS_KEY"))
 
 def get_rekognition_client():
     return boto3.client(
