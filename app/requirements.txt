@@ -1,11 +1,7 @@
 streamlit
-opencv-python
+opencv-python-headless
 Pillow
 boto3
 numpy
-sys
-cv2
 matplotlib
-dotenv
-opencv-python
-opencv-python-headless
+python-dotenv
